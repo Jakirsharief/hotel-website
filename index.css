@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #3e2423;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 15px;
+    padding-right: 40px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #2c2416;
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b4513;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: #8b4513;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    padding: 12px;
+    background: #8b4513;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #8b4513;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #8b4513;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+}
+.logo-icon{
+    font-size: 24px;
+    color: #D4AF37;
+}
+.logo-text{
+    font-size: 35px;
+    font-weight: bold;
+    color: #8b4513;
+    font-family: 'Playfair Display', serif;
+}  
+.logo-text span{
+    color: #D4AF37;
+}
+.logo-container{
+    display: flex;
+    align-items:start;
+    justify-content:start;
+    min-height: 100vh;
+    gap: 50px;
+    text-align: center;
+    margin-top: 65px;
+    padding-left: 65px;
+    padding-right: 65px;
+    margin-right: 120px;
+}

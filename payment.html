@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="product-card" style="text-align:center; margin-top:50px; width: -100vw; height: 100vh;">
+     <a href="#" class="logo d-flex  justify-content-center">
+                <!-- <img src="logo.png" alt="Brew Haven Logo"> -->
+                 <i class="fa-solid fa-mug-hot logo-icon"></i>
+                <div class="logo-text">Brew <span>Haven</span></div>
+        </a>
+    <h1 class="product-title" >💳 Payment Mode</h1>
+
+    <h3 class="product-title">Select Payment Method</h3>
+
+    <!-- ✅ Amount display -->
+    <h2 id="amount" style="color:green;"></h2>
+
+    <button onclick="pay('UPI') " class="btn btn-primary">UPI</button>
+    <button onclick="pay('Card')"class="btn btn-primary">Credit/Debit Card</button>
+    <button onclick="pay('COD')"class="btn btn-primary">Cash on Delivery</button>
+
+    <br><br>
+
+    <h2 class="product-title" id="result"></h2>
+
+    <a href="home.html">
+        <button class="btn btn-primary">Back to Home</button>
+    </a>
+</div>
+
+<script>
+window.onload = function () {
+
+    let price = localStorage.getItem("price");
+    let qty = localStorage.getItem("quantity");
+
+    // safety check
+    if(price && qty){
+
+        price = Number(price);
+        qty = Number(qty);
+
+        let total = price * qty;
+
+        document.getElementById("amount").innerText =
+            "💰 Total Amount: $" + total;
+
+    } else {
+        document.getElementById("amount").innerText =
+            "⚠️ No order data found";
+    }
+}
+
+// payment select
+function pay(method){
+    document.getElementById("result").innerText =
+        "✅ Payment method selected: " + method;
+}
+</script>
+
+</body>
+</html>
