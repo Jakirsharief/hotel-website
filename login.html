@@ -79,7 +79,7 @@ function login() {
 
     if (validUser) {
         localStorage.setItem("loggedInUser", username); // 👈 save current user
-        window.location.href = "home.html";
+        window.location.href = "index.html";
         return false;
     } else {
         alert("Invalid username or password");
